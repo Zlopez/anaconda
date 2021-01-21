@@ -1,0 +1,10 @@
+name: test-attack
+on: [push, pull_request]
+jobs:
+  unit-tests:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: I'm getting pwned!
+        run: |
+          cat /etc/os-release
